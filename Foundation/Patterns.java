@@ -55,5 +55,169 @@ public class Patterns {
             System.out.println();
         }
         System.out.println();
+
+        // print a solid pyramid
+        
+        System.out.println("Print a solid pyramid");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n - i; j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // print an inverted solid pyramid
+
+        System.out.println("Print an inverted solid pyramid");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= i - 1; j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2*n - 2*i + 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // print a hollow rectangle
+
+        System.out.println("Print a hollow rectangle");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= 6; j++){
+                if (i == 1 || i == n){
+                    System.out.print("* ");
+                }
+                else {
+                    if (j == 1 || j == 6){
+                    System.out.print("* ");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // print a hollow right triangle
+
+        System.out.println("Print a hollow right triangle");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            if (i == 1 || i == 2 || i == n){
+                for (int j = 1; j<= i; j++){
+                    System.out.print("* ");
+                }
+            }
+            else {
+                System.out.print("* ");
+                for (int j = 1; j <= (i-2); j++){
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // print a hollow pyramid
+
+        System.out.println("Print a hollow pyramid");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n - i; j++){
+                System.out.print("  ");
+            }
+            if (i == 1 || i == n){
+                for (int j = 1; j <= 2*i - 1; j++){
+                    System.out.print("* ");
+                }
+            }
+            else {
+                System.out.print("* ");
+                for (int j = 1; j <= 2*i - 3; j++){
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // print a pattern with pyramid and inverted pyramid both
+
+        System.out.println("Print a pattern with pyramid and inverted pyramid both");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n - i; j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= n; i++){
+            if (i == 1){
+                continue;
+            }
+            for (int j = 1; j <= i - 1; j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2*n - 2*i + 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // print a pattern with hollow pyramid and inverted hollow pyramid
+
+        System.out.println("Print a pattern with hollow pyramid and inverted hollow pyramid");
+        System.out.println();
+        n = 4;
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n - i; j++){
+                System.out.print("  ");
+            }
+            if (i == 1){
+                for (int j = 1; j <= 2*i - 1; j++){
+                    System.out.print("* ");
+                }
+            }
+            else {
+                System.out.print("* ");
+                for (int j = 1; j <= 2*i - 3; j++){
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= n - 1; i++){
+            for (int j = 1; j <= i; j++){
+                System.out.print("  ");
+            }
+            if (i == (n - 1)){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("* ");
+                for (int j = 1; j <= 2*(n-i)-3; j++){
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
