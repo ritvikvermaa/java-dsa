@@ -1,6 +1,7 @@
 package Foundation;
 public class Operators{
     public static void main(String[] args) {
+
     // Arithmetic Operators
     int solvedThisWeek = 10;
     int solvedLastWeek = 2;
@@ -26,6 +27,15 @@ public class Operators{
     System.out.println(currentStreak < targetStreak);
     System.out.println(currentStreak >= targetStreak);
     System.out.println(currentStreak <= targetStreak);
-    
+
+    // Logical Operators
+
+    boolean completedDSA = true;
+    boolean completedCore = false;
+
+    System.out.println(completedDSA && completedCore);
+    System.out.println(completedDSA || completedCore);
+    System.out.println(!completedCore);
+
     }
 }
