@@ -50,5 +50,36 @@ public class Loops {
             System.out.println(i);
         }
 
+        // while loop
+
+        System.out.println("While loop demonstration");
+        int i = 1;
+        while (i <= 5){
+            System.out.println(i);
+            i++;
+        }
+
+        // nested while loop
+
+        System.out.println("Nested while loop demonstration");
+        int k = 1;
+        while (k <= 2){
+            int j = 1;
+            while (j <= 3){
+                System.out.println("k: " + k + ", j: " + j);
+                j++;
+            }
+            k++;
+        }
+
+        // do-while loop
+
+        System.out.println("Do-while loop demonstration");
+        int iterator = 1;
+        do {
+            System.out.println(iterator);
+            iterator++;
+        } while (iterator <= 0);
+
     }
 }
