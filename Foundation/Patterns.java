@@ -219,5 +219,113 @@ public class Patterns {
             }
             System.out.println();
         }
+
+        // print a pattern using different types of triangles
+
+        System.out.println("Print a pattern using different types of triangles");
+        System.out.println();
+        for (int i = 1; i <= n ; i++){
+            for (int j = 1; j <= i; j++){
+                System.out.print("* ");
+            }
+            for (int j = 1; j <= 2*(n-i); j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= i; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n-i+1; j++){
+                System.out.print("* ");
+            }
+            for (int j = 1; j <= 2*(i-1); j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= n-i+1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        // print numbers in right triangle
+
+        n = 5;
+        System.out.println("Print numbers in right triangle");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= i; j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+
+        // print counting in right triangle
+
+        int count = 1;
+        System.out.println("Print counting in right triangle");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= i; j++){
+                System.out.print(count + " ");
+                count++;
+            }
+            System.out.println();
+        }
+
+        // print alphabets in right angle triangle
+
+        System.out.println("Print alphabets in right angle triangle");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= i; j++){
+                int a = j;
+                int b = ('A' - 1);
+                int ans = a + b;
+                char finalAns = (char)ans;
+                System.out.print(finalAns + " ");
+            }
+            System.out.println();
+        }
+
+        //  print alphabets in reverse order in right triangle
+
+        System.out.println("Print alphabets in reverse order in right triangle");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= i; j++){
+                int a = j;
+                int b = ('E' + 1);
+                int ans = b - j;
+                char finalAns = (char)ans;
+                System.out.print(finalAns + " ");
+            }
+            System.out.println();
+        }
+
+        // print pattern by pyramid and inverted pyramid
+
+        n = 4;
+        System.out.println("Print pattern by pyramid and inverted pyramid");
+        System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= i-1; j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2*n - 2*i + 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = 2; i <= n; i++){
+            for (int j = 1; j <= n-i; j++){
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2*i - 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
