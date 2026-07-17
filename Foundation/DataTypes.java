@@ -41,7 +41,7 @@ public class DataTypes {
 
     // Explicit Type Casting
 
-    long value1 = 3789296473992764;
+    long value1 = 378929647;
     int value2 = (int)value1;
     System.out.println("New Value: " + value2);
 
