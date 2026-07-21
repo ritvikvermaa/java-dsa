@@ -64,7 +64,7 @@ public class Strings {
 
         // java string methods
 
-        String str3 = new String("  Ritvik   ");
+        String str3 = new String("  Ritvik   Verma");
 
         System.out.println(str3.length());
 
@@ -84,5 +84,45 @@ public class Strings {
         System.out.println(str3.toLowerCase());
         System.out.println(str3.toUpperCase());
 
+        // beginIndex = inlcusive
+        // endIndex = exclusive
+
+        System.out.println(str3.substring(3,6));
+        System.out.println(str3.contains("Ritvik"));
+
+        // converting integer to string
+
+        int num = 5123;
+        String str4 = String.valueOf(num);
+        System.out.println(num + 1);
+        System.out.println(str4 + 1);
+
+        // checking if string has something as suffix or prefix
+
+        System.out.println(str3.startsWith(" "));
+        System.out.println(str3.endsWith("&"));
+
+        // convert string to charactrer array
+
+        String name5 = "Ritvik";
+        char[] crr = name5.toCharArray();
+
+        for (char ch : crr){
+            System.out.println("Value of char: " + ch);
+        }
+
+        // splitting the string with a delimiter
+
+        String input = "My,name,is,ritvik";
+        String[] words = input.split(",");
+        for (String stri : words){
+            System.out.println(stri);
+        }
+
+        // replace oldChar with newChar
+
+        String old = "Ritvik";
+        String newString = old.replace('i', 'k');
+        System.out.println(newString);
     }
 }
