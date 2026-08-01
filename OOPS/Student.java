@@ -6,6 +6,7 @@ public class Student {
     public int age;
     public String name;
     public int nos;
+    private String gf;
 
     // Default constructor // attr -> garbage or null
     public Student(){
@@ -13,7 +14,7 @@ public class Student {
     }
 
     // Parameterized constructor
-    public Student(int id, int age, String name, int nos){
+    public Student(int id, int age, String name, int nos, String gf){
         System.out.println("Parameterized constructor called!!");
         this.id = id;
         this.name = name;
@@ -39,5 +40,17 @@ public class Student {
     }
     public void bunk(){
         System.out.println(name + " bunking");
+    }
+    private void gfChatting(){
+        System.out.println(name + " chatting");
+    }
+    public String getName(){
+        return this.name;
+    }
+    public int getAge(){
+        return this.age;
+    }
+    public int setAge(int a){
+        return this.age = a;
     }
 }

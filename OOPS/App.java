@@ -18,8 +18,7 @@ public class App {
         // A.study();
 
         //Parameterized constructor call
-        Student A = new Student(1, 20, "Ritvik", 7);
-        Student B = new Student(2, 20, "Bhotika", 8);
+        Student A = new Student(1, 20, "Ritvik", 7, "Bhotika");
         System.out.println(A.id);
         System.out.println(A.name);
         System.out.println(A.age);
@@ -27,12 +26,9 @@ public class App {
         A.bunk();
         A.sleep();
         A.study();
-        System.out.println(B.id);
-        System.out.println(B.name);
-        System.out.println(B.age);
-        System.out.println(B.nos);
-        B.sleep();
-        B.study();
+        System.out.println(A.getAge());
+        A.setAge(21);
+        System.out.println(A.getAge());
 
         // Copy constructor call
         // Student B = new Student(A);
