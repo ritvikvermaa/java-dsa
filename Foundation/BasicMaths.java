@@ -1,4 +1,4 @@
-package Foundation;
+package foundation;
 
 public class BasicMaths{
 

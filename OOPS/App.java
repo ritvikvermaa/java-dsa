@@ -1,4 +1,4 @@
-package OOPS;
+package oops;
 
 public class App {
     public static void main(String[] args) {

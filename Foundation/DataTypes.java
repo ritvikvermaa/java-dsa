@@ -1,4 +1,4 @@
-package Foundation;
+package foundation;
 
 public class DataTypes {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Foundation;
+package foundation;
 
 import java.util.Scanner;
 
