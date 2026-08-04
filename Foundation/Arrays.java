@@ -46,7 +46,6 @@ public class Arrays {
         // }
 
         // // printing the sum of all elements in an array
-
         System.out.println("Printing the sum of all elements in an array");
         int newArr[] = {10,20,30,40,50};
         int sum = 0;
