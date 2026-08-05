@@ -46,6 +46,27 @@ public class Main {
 
         //traverse using iterator
         Iterator<Integer> iterator = list.iterator();
-        
+        while(iterator.hasNext()){
+            System.out.println("Element: " + iterator.next());
+        }
+
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(11);
+        list3.add(12);
+        list3.add(13);
+        list3.add(14);
+        System.out.println("Element at 0: " + list3.get(0));
+        System.out.println("Element at 1: " + list3.get(1));
+        System.out.println("Element at 2: " + list3.get(2));
+        list3.set(0, 100);
+        System.out.println("Element at 0 after set: " + list3.get(0));
+        System.out.println(list3);
+
+        Object[] arr = list3.toArray();
+        for (Object obj: arr){
+            System.out.println(obj);
+        }
+
+        System.out.println("List 3 contains 100: " + list3.contains(100));
     }
 }
